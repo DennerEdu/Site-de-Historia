@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+header{
+    background-image: linear-gradient(to right, rgb(23, 89, 49), rgb(181, 224, 198));
+    color: #ffffff ;
+    height: 7em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* Container do nome e logo do site*/
+.container-logo{
+    margin-left: 2.5em;
+    width: 30em;
+    height: 5em;
+    display: flex;
+}
+
+/* Menu de navegação no header do site*/
+header nav{
+    height: 5em;
+    width: 23em;
+    margin-right: 2.5em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(23, 89, 49);
+    font-size: 1.5em;
+    padding: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-left: 2em;
+}
+
+header nav a:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.main-content{
+    width: 60%;
+    background-color: #b5e0c6 ;
+}
+
+.extra-content{
+    width: 40%;
+}
+
+.main-content h1, .extra-content h1{
+    margin-left: 1em;
+}
+
+.srch a{
+    cursor: pointer;
+    
+}
+
+.srch{
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.srch a:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.summary{
+    display: none;
+    border: 1px solid #000000;
+    border-radius: 0.5em;
+    width: 95%;
+    background-color: #ffffff;
+    margin-top: 0.5em;
+}
+
+.read{
+    display: block;
+}
+
+.summary h2, p{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.summary a{
+    width: 2em;
+    margin-left: 1em;
+}
+
+.summary button{
+    width: 10em;
+    height: 3em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border-color: #b8b4b4;
+    background-color: #b5e0c6 ;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    background-color: #3f7650;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    bottom: 0;
+    height: 6em;
+}
